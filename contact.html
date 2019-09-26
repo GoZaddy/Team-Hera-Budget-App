@@ -23,11 +23,13 @@
         <nav class = "w-100">
     			<ul class="menu">
     				<li class="logo"><a href="#"><img class="logo-image" src="Designs/logo normal.png" class="img-fluid"></a></li>
-    				<li class="item"><a href="#"> Home</a></li>
-    				<li class="item"><a href="#"> About</a></li>
-    				<li class="item"><a href="#"> Service</a></li>
-    				<li class="item button"><a href="#"> Login</a></li>
-    				<li class="item button secondary"><a id = "signup" href="#"> Sign Up</a></li>
+          <li class="item"><a href="index.html"> Home</a></li>
+
+          <li class="item"><a href="budget.html"> Dashboard</a></li>
+          <li class="item"><a href="team.html"> Meet The Team</a></li>
+          <li class="item"><a href="contact.html"> Contact Us</a></li>
+          <li class="item button"><a href="signin.html"> Login</a></li>
+          <li class="item button secondary"><a href="#"> Sign Up</a></li>
     				<li class="toggle"> <span class="bars"></span></li>
     			</ul>
     		</nav>
@@ -83,18 +85,18 @@
               <img class = "d-none d-md-block mb-5 w-100" id = "vector" src="Designs/contact-vector.svg" alt="vector illustration" height = 700>
               <div class="mx-auto mx-lg-0 position-static position-lg-absolute " id =  "form-container">
                 <h4 class = "text-center">CONTACT US</h4>
-                <form class = "mb-lg-5">
-                  <fieldset class="form-group">
-                    <input type="text" class="form-control" id="name-field" placeholder="NAME">
+                <form action="server.php" method="POST">
+                     <fieldset class="form-group">
+                    <input type="text" class="form-control" id="name-field" placeholder="Name" name="cusname">
                   </fieldset>
                   <fieldset class="form-group">
-                    <input type="email" class="form-control" id="email-field" placeholder="EMAIL">
+                    <input type="email" class="form-control" id="email-field" placeholder="Email" name="cusemail">
                   </fieldset>
                   <fieldset class="form-group">
-                    <textarea name="name" class = "form-control" rows="6" cols="80"></textarea>
+                    <textarea name="cusmsg" class = "form-control" rows="6" cols="80"></textarea>
                   </fieldset>
+                    <button type='submit' class='mx-auto d-block mx-md-0 float-md-right mt-4 mt-md-0' id = "send" >Send</button>
                 </form>
-                <button type="button"class = "mx-auto d-block mx-md-0 float-md-right mt-4 mt-lg-0" id = "send" name="button">SEND</button>
               </div>
 
             </div>
@@ -141,6 +143,6 @@
 
 
 
-
+<script src="/js/contact.js"></script>
   </body>
 </html>

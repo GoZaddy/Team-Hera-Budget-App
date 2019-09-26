@@ -1,3 +1,103 @@
 /* css file for budget page */
 
 /* work on the styling  @developerRuq @Goldin @thrive */
+
+.budget-logo{
+  margin-left: -10%;
+  width: 150px;
+  height: auto;
+}
+.side-pane{
+  margin-top: 2%;
+  padding-left: 2%;
+}
+.budget-board{
+  background: linear-gradient(180deg, #3264b0 0%, #438afc 92.12%);
+  padding: 50px;
+}
+.budget-panel{
+  padding-top: 40px;
+}
+h3{
+  color: #fff;
+  font-weight: 600;
+  font-size: 210%;
+  text-decoration: bolder;
+}
+.name-tag{
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.user-img{
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+
+}
+.card{
+  border-radius: 15px;
+  width: 120%;
+  padding: 10px;
+}
+h5{
+  font-weight: 600;
+  margin-left: 20px;
+  color: linear-gradient(180deg, #3264b0 0%, #438afc 92.12%) !important;
+  font-size: 180%;
+
+}
+.naira-symbol{
+  width: 40px;
+  height: auto;
+}
+.submit-btn{
+  background: linear-gradient(180deg, #3264b0 0%, #438afc 92.12%) !important;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.priority{
+  font-size: 12px;
+}
+.budget-list-card{
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+.budget-icon{
+background: linear-gradient(180deg, #3264b0 0%, #438afc 92.12%);
+border-radius: 50%;
+padding: 6px;
+}
+th{
+  color: linear-gradient(180deg, #3264b0 0%, #438afc 92.12%);
+  text-transform: uppercase !important;
+  font-weight: 600;
+}
+li{
+  list-style: none;
+}
+.dashboard_icon{
+  width: 20px;
+  height: auto;
+}
+.dashboard_link{
+  text-decoration: none;
+  color: #777;
+  font-weight: 600;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+.dashboard_link:hover{
+  text-decoration: none;
+  border-bottom: 2px solid #3264b0;
+
+}
+.dashboad_nav li{
+  line-height: 1.9;
+}
+/* end of css for navbar */

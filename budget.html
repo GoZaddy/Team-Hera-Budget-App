@@ -1,15 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/css/budget.css" />
-    <title>Budget App</title>
-  </head>
+    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!-- seo meta tags -->
+	    <meta name="description" content="Hera: Budget page">
+        <meta name="author" content="thrive">
+        <meta name="docsearch:language" content="en">
+        <meta name="docsearch:version" content="4.3">
+	    <!-- Animate CSS -->
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/fontawesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/budget.css"/>
+	    <title>Hera: Budget page</title>
+</head>
   <body>
-    /* work on the html @message @developerRuq @Goldin @thrive */
+    <!--work on the html @message @developerRuq @Goldin @thrive-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="side-pane col-sm-2 col-md-2">
+          <img class="budget-logo" src="img/logo normal.png">
+          <br>
+          <br>
+          <ul class="dashboad_nav">
+            <li> <img class="dashboard_icon" src="img/brick.png"> <a class="dashboard_link" href=""> Dashboard</a></li>
+            <li> <img class="dashboard_icon" src="img/budg.png"> <a class="dashboard_link" href=""> Budget</a>
+              <ul>
+                <li> <a  class="dashboard_link small" href=""> New Budget</a> </li>
+                <li> <a class="dashboard_link small" href="" > Budget History</a> </li>
+              </ul>
+            </li>
+           <li> <img class="dashboard_icon" src="img/logout.png"> <a class="dashboard_link" href=""> Log Out</a></li>
+          </ul>
+        </div>
 
-    <script src="/JavaScript/budget.js"></script>
+
+        <div class=" budget-board col-md-10">
+          <div class="container">
+            <div class="row">
+            <div class="col-md-10">
+            <h3>NEW BUDGET</h3>
+
+            </div>
+            <div class="col-md-2">
+              <div class="name-tag">
+                 <img class="user-img" src="https://randomuser.me/api/portraits/men/62.jpg"> Nma. Okezie
+               </div>
+            </div>
+          </div>
+
+         <div class="row budget-panel">
+            <div class="col-md-3">
+              <div class="card">
+                <h5>Income</h5>
+               <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-2 offset-1">
+                      <img class="naira-symbol" src="img/Naira.png" alt="naira symbol">
+
+                    </div>
+                    <div class="col-md-8">
+                      <input type="text" class="form-control" id="" placeholder="250,000">
+                      <br>
+                      <button class="btn btn-primary submit-btn">SUBMIT</button>
+                    </div>
+                  </div>
+                </div>
+                </form>
+              </div>
+              <br><br>
+
+               <div class="card">
+                <h5>Enter Budget</h5>
+               <form>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-10 offset-1">
+                      <input type="text" class="form-control" id="" placeholder="Item">
+                      <br>
+                    </div>
+
+
+                    </div>
+
+                      <div class="form-group">
+                        <div class="row">
+                        <div class="col-md-5 offset-1">
+                          <span class="priority">Priority Level </span>
+                        </div>
+                        <div class="col-md-4">
+                          <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8 offset-2">
+                         <button class="btn btn-primary submit-btn">SUBMIT</button>
+
+                      </div>
+                    </div>
+                    </div>
+                      </form>
+                  </div>
+                  <br>
+                  <br>
+
+                   <div>
+                         <button class="btn btn-primary submit-btn">CALCULATE BUDGET</button>
+
+                  </div>
+
+
+                </div>
+
+                <div class="col-md-9 budget-list-card">
+                  <div class="card">
+                    <table class="table">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Item</th>
+                          <th scope="col">Priority</th>
+                          <th scope="col">Amount</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th > <span class="budget-icon"> TV</span> </th>
+                          <td>Travel</td>
+                          <td>3</td>
+                          <td>3,000</td>
+                        </tr>
+                        <tr>
+                          <th > <span class="budget-icon"> TV</span> </th>
+                          <td>Travel</td>
+                          <td>3</td>
+                          <td>3,000</td>
+                        </tr>
+                        <tr>
+                          <th > <span class="budget-icon"> TV</span> </th>
+                          <td>Travel</td>
+                          <td>3</td>
+                          <td>3,000</td>
+                        </tr>
+                        <tr>
+                          <th > <span class="budget-icon"> TV</span> </th>
+                          <td>Travel</td>
+                          <td>3</td>
+                          <td>3,000</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+
+
+                  </div>
+                  <br><br><br>
+
+                   <div>
+                         <button class="btn btn-primary submit-btn">SAVE BUDGET</button>
+
+                  </div>
+
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <script type="text/javascript" src="/js/budget.js"></script>
   </body>
 </html>
